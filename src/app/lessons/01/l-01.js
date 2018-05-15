@@ -702,7 +702,7 @@ console.log('\nLesson 01 - Homework:\n\n!!! Please answer the questions in this 
 // A: 
 function sub (a, b) { 
     return a - b;  
-} 
+}
     
 
 // Lesson 01 Homework - End
