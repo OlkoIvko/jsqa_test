@@ -1,11 +1,17 @@
-/**
- * JavaScript Lesson 2 - Deeper into data types.
- * 
- * To run this file: node src/app/lessons/02/l-02.js
- */
+/*
+	JavaScript Lesson 02
+	 - Deeper into data types.
+	To execute this file: node src/app/lessons/02/l-02.js
+*/
+
+// Please note - there are two types of comments in JS:
+
+/* - Block comment */
+// - Line comment
 
 // Let's start with it each time:
 'use strict';
+
 
 // This is how dynamic typing in JavaScript works:
 let foo = 42;
@@ -263,14 +269,12 @@ console.log('\nTask 02.01: TODO: Review the contents of this file and make sure 
 // Task 02.01
 // 1 point
 // TODO: if you performed this task, please uncomment next line:
- console.log('I\'ve reviewed the l-02.js file and I understand it');
+// console.log('I\'ve reviewed the l-02.js file and I understand it');
 
 console.log('\nTask 02.02:');
 // Task 02.02
 // 1 point
 // Using String.substring method, log to the console characters 5-8 of the 'helloWorld' string.
 // TODO: write code here
-let myphrase = 'helloWorld';
-console.log(myphrase.substring(5, 9));
 
-console.log('\nLesson 02 - Homework End.');
+console.log('\nLesson 02 - Homework End');
