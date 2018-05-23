@@ -1,9 +1,10 @@
 /** 
- * Lesson 03
+ * JavasScrip Lesson 3
+ *
  *  - Complex data types: Object, Array, Function
  *  - Variables scope, variables hoisting, var vs. let vs. const
- * To execure this file:
- * node src/app/lessons/03/l-03.js
+ *
+ * To run this file: node src/app/lessons/03/l-03.js
  */
 
 // Спочатку було слово, і воно було:
@@ -12,7 +13,7 @@
 // Пригадаємо прості типи:
 
 // String:
-const lessonName = 'Javascript Lesson 3. Deeper to data types';
+const lessonName = 'Javascript Lesson 3. Deeper to data types.';
 
 // Number:
 const lessonId = 2;
@@ -210,24 +211,32 @@ console.log('\nTask 03.01:');
 // Points: 2
 // In code above, we created 'lesson' object. Add 'date' property to it, having null value.
 // TODO: write code here
+lesson.date = null;
+console.log(lesson);
 
 console.log('\nTask 03.02');
 // Task 03.02
 // Points: 3
 // Add getInfo method to the lesson object, it should log lesson info to the console: lesson name, id and date.
 // TODO: write code here
-
+lesson.getInfo = function(){ 
+     console.log(lesson.name  +  '\n', lesson.id + '\n', lesson.date); 
+} 
+lesson.getInfo(); 
+    
 console.log('\nTask 03.03');
 // Task 03.03
 // Points: 2
 // In code above, we defined the 'student' object. 
 // Add 'birthday' property to it, set it's value to new Date(1991,8,24);
 // TODO: write code here
+student.birthday = '1991,8,24';
+console.log(student);
 
 console.log('\nTask 03.04: TODO: Review this file and make sure you understand it.');
 // Task 03.04
 // Points: 1
 // TODO: if you performed this task, please uncomment next line:
-// console.log('I\'ve reviewed the l-03.js file and I understand it');
+ console.log('I\'ve reviewed the l-03.js file and I understand it');
 
-console.log('\nLesson 03 - Homework End');
+console.log('\nLesson 03 - Homework End.');
