@@ -523,7 +523,7 @@ console.h1('Task 05.01');
 // Запиши її назву у нову глобальну змінну 'createdByConstructor'.
 // TODO: пиши свій код тут:
 
-let createdByConstructor;
+let createdByConstructor = 'birthdayDate'; //Не дуже зрозуміло, що потрібно
 
 if (createdByConstructor && createdByConstructor === 'birthdayDate') {
 	console.log('\n\tThanks! This task is done');
@@ -535,6 +535,7 @@ console.h1('Task 05.02');
 
 // Points: 1
 // TODO: пиши код тут:
+									//Теж не зрозуміло що тут писати
 console.log('\n\tPlease implement this task and few tests to check it');
 
 // 05.02.1 Який з цих прикладів є невірним зразком створення та ініціалізації змінної:
@@ -547,12 +548,15 @@ console.log('\n\tPlease implement this task and few tests to check it');
 // 05.02.2 Створи змінні наступних типів. Для тих типів, де це неможливо, напиши коментар "Типу не існує"
 // 
 // 1. string
-// 2. char
-// 3. int
-// 4. float
+let testString = 'It is my string';
+// 2. char //Типу не існує
+// 3. int //Типу не існує
+// 4. float //Типу не існує
 // 5. boolean
-// 6. interface
+let testBoolean = true;
+// 6. interface //Типу не існує
 // 7. undefined
+let testUnd;
 // 
 // 
 // 05.02.3 Знайди тут оператор строгого порівняння та випишіть його:
@@ -560,20 +564,20 @@ console.log('\n\tPlease implement this task and few tests to check it');
 // 1. 'use strict'
 // 2. ==
 // 3. &&
-// 4. ===
+// 4. === //<---
 // 5. EQ
 // 
 // 
 // 05.02.4 Який з цих виразів є помилковим?
 // 
 // 1. x * y == z
-// 2. x + y = z
+// 2. x + y = z //<---
 // 3. x = y + (z = i / (k = m * n))
 // 
 // 
 // 05.02.5 Який з цих операторів означає "логічне АБО"?
 // 
-// 1. ||
+// 1. || //<---
 // 2. OR
 // 3. |
 // 
@@ -582,20 +586,20 @@ console.log('\n\tPlease implement this task and few tests to check it');
 // 
 // 1. AND
 // 2. and
-// 3. &&
+// 3. && //<---
 // 4. &
 // 
 // 
 // 05.02.7 Чи правда, що оператор ‘typeof’ використовується для:
 // 
-// 1. Отримання назви типу?
+// 1. Отримання назви типу? //<---
 // 2. Отримання посилання на констуктор?
 // 
 // 
 // 05.02.8 Які з цих прикладів є невірним використанням оператора умовного присвоєння?
 // 
-// 1. var y = x := z | m;
-// 2. var y = x : z ? m;
+// 1. var y = x := z | m; //<---
+// 2. var y = x : z ? m; //<---
 // 3. var y = x ? z : m;
 // 
 // 
@@ -605,14 +609,14 @@ console.log('\n\tPlease implement this task and few tests to check it');
 // 1. (function w(){})()
 // 2. var function x(){}
 // 3. var z = new Function('argument', '// TODO')
-// 4. var y = function(){}
+// 4. var y = function(){} //<---
 // 
 // 
 // 
 // 05.02.10 Де конкатенація рядків зроблена з помилкою?
 // 
 // 1. "str1" + "str2"
-// 2. "str1" ~ "str2"
+// 2. "str1" ~ "str2" //<---
 // 3. "str1".concat("str2")
 // 3. String.concat("str1", "str2")
 
@@ -623,7 +627,11 @@ console.h1('Task 05.03');
 // записавши результуючий код тут.
 
 // TODO: пиши код тут:
-console.log('\n\tPlease implement this task');
+function Tree(name) { 
+ 	this.name = name; 
+ 	console.log('The tree name is: ' + this.name); 
+} 
+var testTree = new Tree('Oac');	
 
 
 
