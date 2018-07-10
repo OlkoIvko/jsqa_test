@@ -416,12 +416,21 @@
     // передавши анонімну функцію в якості параметра.
     // TODO: пиши тут:
 
+    const useAnonymousCallback = callback => callback(); 
+    useAnonymousCallback(function() { 
+        console.log('Hello world'); 
+    }) 
+
     console.log('Please implement this task');
 
     console.log('\nTask 08.02');
     // Points: 2
     // Напиши функцію useAnonymousCallback, що приймає параметр callback, і виклич її, 
     // передавши їй в якості параметра іменовану функцію.
+
+    const useAnonymousCallback2 = callback => callback(); 
+    const myFunction = () => console.log('Hi!!!'); 
+    useAnonymousCallback2(myFunction); 
 
     console.log('Please implement this task');
     
@@ -434,6 +443,13 @@
     // значення змінної enclosed через замикання.
     // TODO: пиши тут:
 
+    let workingCallback = (myFunctionTwo) =>{ 
+        var enclosed = 1975; 
+        myFunctionTwo(enclosed); 
+    }; 
+    let myFunctionThree = (myParam) =>console.log(myParam); 
+    workingCallback(myFunctionThree); 
+        
     console.log('Please implement this task');    
 
     console.h1('Lesson 08 - Homework End');

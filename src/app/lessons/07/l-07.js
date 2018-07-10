@@ -275,7 +275,7 @@
 		return function func1InternalFunc() {}
 	}
 
-	// TODO: дай відповідь тут:
+	// TODO: дай відповідь тут: так, бо всі функції є замиканням
 
 	console.log('\nTask 07.02');
 	console.log('\n\t Please implement this task');
@@ -284,11 +284,18 @@
 	// Напиши функцію-замикання -- будь-яку.
 	// TODO: пиши код тут:
 
-	function sillyClosure() {
-		return this;
+	function sillyClosure(extermalSum) {
+		let internalSum = extermalSum
+		function myFunction (){
+			internalSum++;
+			return internalSum;
+		};
+		return myFunction;
 	}
 
 	console.log(sillyClosure())
+	var mySum = sillyClosure(5);
+	var count = mySum();
 
 	console.log('\nTask 07.03');
 	console.log('\n\t Please implement this task');
@@ -301,7 +308,7 @@
 		return false;
 	}
 
-	// TODO: пиши відповідь словами тут:
+	// TODO: пиши відповідь словами тут: За допомогою return iAmEnclosed
 	// WRONG 1:
 	function iAmClosureTwo() {
 		var iAmEnclosed = 'secret';
@@ -365,3 +372,15 @@
 
 })();
 // Завершення глобальної анонімної функції
+
+function lastFunction() { 
+	var name = 'myName'; 
+	function mySomeFunction() { 
+		console.log(name);
+	} 
+		return mySomeFunction; 
+} 
+result = lastFunction() 
+console.log(result); 
+result(); 
+	
